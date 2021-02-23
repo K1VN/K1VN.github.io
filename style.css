@@ -1,0 +1,398 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 150px 50px auto 150px 150px;
+    grid-template-rows: 725px auto auto auto 50px;
+}
+
+/* Start of Header */
+
+.header {
+    width: 100%;
+    height: 100px;
+    border-bottom: 2px black solid;
+    box-shadow: 2px 0 5px;
+    display: flex;
+    align-items: center;
+    padding-left: 100px;
+    position: fixed;
+    background-color: black;
+    z-index: 1;
+}
+
+.title {
+    margin-right: 20px;
+    padding-right: 20px;
+    width: 60%;
+    display: flex;
+    align-items: center;
+}
+
+.title h1 {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 300;
+    font-size: 40px;
+    color: white;
+}
+
+.title h5 {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 300;
+    font-size: 20px;
+    color: white;
+    margin-left: 20px;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    margin-right: 30px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 25px;
+    position: relative;
+}
+
+.header a:after {
+    width: 0;
+    height: 2px;
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    background-color: white;
+    display: block;
+    transition: width 0.3s, left 0.3s;
+}
+
+.header a:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+/* End of Header */
+/* Start of Intro */
+
+.intro {
+    grid-column: 3 / span 2;
+    grid-row: 1 / span 1;
+    display: flex;
+}
+
+.intro_text {
+    margin-top: 175px;
+}
+
+.intro h1 {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 100px;
+}
+
+.intro h5 {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.about_text {
+    width: 100%;
+    border-top: 1px black solid;
+}
+
+#name {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+#about {
+    margin: 20px 0;
+}
+
+.formal_socials {
+    margin-top: 50px;
+    border-top: 1px black solid;
+}
+
+#formal_contact {
+    margin-top: 20px;
+}
+
+.email_contact {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.email_contact a {
+    text-decoration: none;
+}
+
+.email_contact h5 {
+    margin-left: 10px;
+    font-weight: 500;
+}
+
+#email {
+    color: black;
+}
+
+.socials i {
+    margin-left: 20px;
+}
+
+#twitter {
+    color: #1DA1F2;
+}
+
+#instagram {
+    color: #C13584;
+}
+
+#linkedin {
+    color: #2867B2;
+}
+
+#github {
+    color: black;
+}
+
+.intro img {
+    width: 562px;
+    height: 619px;
+    margin-top: 100px;
+    margin-right: 150px;
+}
+
+/* End of Intro */
+/* Start of Projects */
+
+.projects {
+    grid-column: 3 / span 2;
+    grid-row: 2 / span 1;
+    border-bottom: 1px black solid;
+    padding-bottom: 50px;
+}
+
+.section_title {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 50px;
+    margin-top: 20px;
+    display: block;
+    text-align: center;
+}
+
+.section_des {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.project_container {
+    display: flex;
+    justify-content: center;
+}
+
+.project_block {
+    min-width: 45%;
+    margin: 20px;
+    padding: 20px;
+    border: 2px black solid;
+    box-shadow: 5px 10px;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.2s;
+}
+
+.project_block:hover > .github_link {
+    color: white;
+}
+
+.project_block:hover {
+    background-color: black;
+    color: white;
+}
+
+.block_title {
+    font-family: 'Nunito', monospace;
+    font-size: 20px;
+}
+
+.block_des {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.block_tag {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 300;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.github_link {
+    float: right;
+    color: black;
+}
+
+/* End of Projects */
+/* Start of Guides */
+
+.guides {
+    grid-column: 3 / span 2;
+    grid-row: 3 / span 1;
+    border-bottom: 1px black solid;
+    padding-bottom: 50px;
+}
+
+.guide_content {
+    display: flex;
+    vertical-align: middle;
+    text-align: center;
+    justify-content: center;
+}
+
+.guide_block {
+    width: 20%;
+    margin: 20px;
+    padding: 20px;
+    border: 2px white solid;
+    box-shadow: 5px 10px;
+    background-color: black;
+}
+
+.guide_block ul {
+    list-style: none;
+}
+
+.guide_block li {
+    margin-top: 10px;
+    padding: 5px;
+    border: 2px white solid;
+}
+
+.guide_block a {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 15px;
+    font-weight: 300;
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+#guide_main {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+@keyframes flicker {
+    0% {
+        background-color: black;
+        color: white;
+    }
+    50% {
+        background-color: white;
+        color: black;
+    }
+    100% {
+        background-color: black;
+        color: white;
+    }
+}
+
+.guide_block a:hover {
+    animation-name: flicker;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+/* End of Guides */
+/* Start of Content */
+
+.blog {
+    grid-column: 3 / span 2;
+    grid-row: 4 / span 1;
+    padding-bottom: 50px;
+}
+
+.blog_container {
+    display: flex;
+    justify-content: center;
+}
+
+.blog_block {
+    min-width: 30%;
+    margin: 20px;
+    padding: 20px;
+    border: 2px black solid;
+    box-shadow: 5px 10px;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.2s;
+}
+
+.block_img {
+    width: 100%;
+    height: auto;
+    border: 2px black solid;
+    margin: 10px 0;
+}
+
+.medium_link {
+    float: right;
+    color: black;
+}
+
+.blog_block:hover > .medium_link {
+    color: white;
+}
+
+.blog_block:hover > .block_img {
+    border: 2px white solid;
+}
+
+.blog_block:hover {
+    background-color: black;
+    color: white;
+}
+
+#medium {
+    color: black;
+}
+
+#youtube {
+    color: #FF0000;
+}
+
+/* End of Content */
+/* Start of Footer */
+
+.footer {
+    grid-column: 1 / span 5;
+    grid-row: 5 / span 1;
+    background-color: #2d2d2d;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.footer h5 {
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.date {
+    width: 50%;
+}
+
+.version {
+    margin-left: 20px;
+}
