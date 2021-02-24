@@ -7,7 +7,7 @@
 .container {
     display: grid;
     grid-template-columns: 2fr 800px 2fr;
-    grid-template-rows: 725px auto auto auto 100px;
+    grid-template-rows: auto auto auto auto 100px;
 }
 
 /* Start of Header */
@@ -16,7 +16,6 @@
     width: 100%;
     height: 100px;
     border-bottom: 2px black solid;
-    box-shadow: 2px 0 5px;
     display: flex;
     align-items: center;
     padding-left: 100px;
@@ -77,6 +76,8 @@
     grid-column: 2;
     grid-row: 1 / span 1;
     display: flex;
+    border-bottom: 1px black solid;
+    padding-bottom: 50px;
 }
 
 .intro_text {
