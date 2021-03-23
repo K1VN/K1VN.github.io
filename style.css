@@ -6,8 +6,8 @@
 
 .container {
     display: grid;
-    grid-template-columns: 2fr 800px 2fr;
-    grid-template-rows: auto auto auto auto 100px;
+    grid-template-columns: 1fr 1000px 1fr;
+    grid-template-rows: 1080px auto auto auto 100px;
 }
 
 /* Start of Header */
@@ -15,7 +15,6 @@
 .header {
     width: 100%;
     height: 100px;
-    border-bottom: 2px black solid;
     display: flex;
     align-items: center;
     padding-left: 100px;
@@ -52,23 +51,6 @@
     border-left: 1px solid white;
 }
 
-.header a:after {
-    width: 0;
-    height: 2px;
-    content: "";
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    background-color: white;
-    display: block;
-    transition: width 0.3s, left 0.3s;
-}
-
-.header a:hover:after {
-    width: 100%;
-    left: 0;
-}
-
 /* End of Header */
 /* Start of Intro */
 
@@ -78,75 +60,61 @@
     display: flex;
     border-bottom: 1px black solid;
     padding-bottom: 50px;
+    margin-top: 175px;
 }
 
 .intro_text {
-    margin-top: 175px;
+    width: 60%;
 }
 
 .intro h1 {
     font-family: 'Roboto Mono', monospace;
-    font-size: 100px;
+    font-size: 150px;
+    text-transform: uppercase;
 }
 
 .intro h5 {
     font-family: 'Roboto Mono', monospace;
-    font-size: 20px;
-    font-weight: 300;
+    font-size: 90px;
 }
 
-.about_text {
-    width: 100%;
-    border-top: 1px black solid;
+.menu {
+    height: 70%;
+    margin-top: 50px;
+    background-color: black;
+    padding: 20px 60px;
+    margin-left: 60px;
 }
 
-#name {
-    font-size: 25px;
-    font-weight: 500;
+.menu ul {
+    list-style: none;
+}
+
+.menu li {
+    margin: 25px 0;
+}
+
+.menu a {
+    font-family: 'Roboto Mono', monospace;
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+}
+
+.menu a:hover {
+    color: black;
+    background-color: white;
 }
 
 #about {
-    margin: 20px 0;
+    font-size: 30px;
+    font-weight: 300;
 }
 
-.email_contact {
-    margin-left: 20px;
-    margin-top: 20px;
-    display: flex;
-    align-items: center;
-}
-
-.email_contact a {
-    text-decoration: none;
-}
-
-.email_contact h5 {
-    margin-left: 10px;
-    font-weight: 500;
-}
-
-#email {
-    color: black;
-}
-
-.socials i {
-    margin-left: 20px;
-}
-
-#twitter {
-    color: #1DA1F2;
-}
-
-#instagram {
-    color: #C13584;
-}
-
-#linkedin {
-    color: #2867B2;
-}
-
-#github {
-    color: black;
+#about_website {
+    margin-top: 50px;
+    font-size: 30px;
+    font-weight: 300;
 }
 
 /* End of Intro */
@@ -154,7 +122,7 @@
 
 .projects {
     grid-column: 2;
-    grid-row: 2 / span 1;
+    grid-row: 3 / span 1;
     border-bottom: 1px black solid;
     padding-bottom: 50px;
 }
@@ -181,6 +149,7 @@
 
 .project_block {
     min-width: 45%;
+    max-width: 45%;
     margin: 20px;
     padding: 20px;
     border: 2px black solid;
@@ -199,7 +168,7 @@
 
 .block_title {
     font-family: 'Nunito', monospace;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .block_des {
@@ -231,9 +200,9 @@
 
 .guides {
     grid-column: 2;
-    grid-row: 3 / span 1;
+    grid-row: 2 / span 1;
     border-bottom: 1px black solid;
-    padding-bottom: 50px;
+    padding-bottom: 200px;
 }
 
 .guide_content {
@@ -244,12 +213,10 @@
 }
 
 .guide_block {
-    width: 40%;
+    width: 25%;
     margin: 20px;
     padding: 20px;
     border: 2px white solid;
-    box-shadow: 5px 10px;
-    background-color: black;
 }
 
 .guide_block ul {
@@ -259,39 +226,39 @@
 .guide_block li {
     margin-top: 10px;
     padding: 5px;
-    border: 2px white solid;
 }
 
 .guide_block a {
     font-family: 'Roboto Mono', monospace;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: 300;
     text-decoration: none;
-    color: white;
     display: block;
+    border: 2px solid white;
+    color: black;
 }
 
 #guide_main {
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 500;
 }
 
 @keyframes flicker {
     0% {
-        background-color: black;
-        color: white;
-    }
-    50% {
         background-color: white;
         color: black;
     }
-    100% {
+    50% {
         background-color: black;
         color: white;
     }
+    100% {
+        background-color: white;
+        color: black;
+    }
 }
 
-.guide_block a:hover {
+.flicker a:hover {
     animation-name: flicker;
     animation-duration: 1s;
     animation-iteration-count: infinite;
@@ -304,6 +271,7 @@
     grid-column: 2;
     grid-row: 4 / span 1;
     padding-bottom: 50px;
+    border-bottom: 1px black solid;
 }
 
 .blog_container {
@@ -313,7 +281,8 @@
 
 .blog_block {
     min-width: 30%;
-    width: 70%;
+    width: 30%;
+    min-height: 75%;
     margin: 20px;
     padding: 20px;
     border: 2px black solid;
@@ -350,29 +319,36 @@
     color: black;
 }
 
-#youtube {
-    color: #FF0000;
-}
-
 /* End of Content */
 /* Start of Footer */
 
 .footer {
     grid-column: 1 / span 5;
     grid-row: 5 / span 1;
-    background-color: #2d2d2d;
     padding: 20px;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .footer h5 {
     font-family: 'Roboto Mono', monospace;
-    color: white;
     font-weight: 300;
     font-size: 20px;
 }
 
-.date {
-    width: 50%;
+.socials i {
+    margin-left: 20px;
+}
+
+#linkedin {
+    color: #2867B2;
+}
+
+#github {
+    color: black;
+}
+
+#youtube {
+    color: #FF0000;
 }
