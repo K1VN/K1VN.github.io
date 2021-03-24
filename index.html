@@ -2,8 +2,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=1000, initial-scale=0.40">
-    <meta name="description" content="This is a database of guides, projects for engineering.">
-    <title>OPEN DATABASE</title>
+    <meta name="description" content="">
+    <title>Open Data</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;500&amp;display=swap" rel="stylesheet">
@@ -12,22 +12,17 @@
 </head>
 <body>
     <div class='container'>
-        <div class='header'>
-            <div class='title'>
-                <h1>OPEN</h1>
-                <div class='slogan'>
-                    <h5>open source database.</h5>
-                </div>
-            </div>
+        <div class='socials'>
+            <a id='linkedin' href="https://www.linkedin.com/in/kevin-ma-6abb85183/"><i class="fab fa-linkedin fa-3x"></i></a>
+            <a id='github' href="https://github.com/K1VN"><i class="fab fa-github fa-3x"></i></a>
+            <a id='youtube' href="https://www.youtube.com/channel/UCVElT_tWoC9Z_DVdt9XWT1g?guided_help_flow=5"><i class="fab fa-youtube fa-3x"></i></a>
         </div>
         <div class='intro'>
             <div class='intro_text'>
-                <h1>Hello</h1>
-                <h5>I'm Kevin.</h5>
-                <h5 id='about'>I'm 18 and I go to university for mechanical engineering.
-                    I like designing objects, and also taking pictures of them too.
-                </h5>
-                <h5 id='about_website'>My website offers you guides, readings and tutorials. Enjoy!</h5>
+                <h5>Hi,</h1>
+                <h1>I'm Kevin.</h5>
+                <h5 id='about'>Open Data is my website.<br><br>It offers you guides, readings
+                    and tutorials in addition to my personal projects. Enjoy!</h5>
             </div>
             <div class='menu'>
                 <ul>
@@ -43,7 +38,7 @@
             <h1 class='section_title'>Guides</h1>
             <h5 class='section_des'>Click on what you want to learn.</h5>
             <div class='guide_content'>
-                <div class='guide_block flicker'>
+                <div class='guide_block'>
                     <a id='guide_main' href="">Software</a>
                     <ul>
                         <li><a href="">Programming</a></li>
@@ -51,21 +46,21 @@
                         <li><a href="">Firmware</a></li>
                     </ul>
                 </div>
-                <div class='guide_block flicker'>
+                <div class='guide_block'>
                     <a id='guide_main' href="">Mechanical</a>
                     <ul>
                         <li><a href="">Design</a></li>
                         <li><a href="">CAD</a></li>
                     </ul>
                 </div>
-                <div class='guide_block flicker'>
+                <div class='guide_block'>
                     <a id='guide_main' href="">Electrical</a>
                     <ul>
                         <li><a href="">Circuits</a></li>
                         <li><a href="">Components</a></li>
                     </ul>
                 </div>
-                <div class='guide_block flicker'>
+                <div class='guide_block'>
                     <a id='guide_main' href="">Finance</a>
                     <ul>
                         <li><a href="">Budgeting</a></li>
@@ -76,19 +71,21 @@
             </div>
         </div>
         <div class='projects'>
-            <h1 class='section_title'>Projects</h1>
+            <div class='section_header'>
+                <a href='' id='projects' class='section_title'>Projects</a>
+                <a class='github_link' href="https://github.com/K1VN"><i class="fab fa-github fa-2x"></i></a>
+            </div>
+            <h5 class='section_des'>I make things that can be move or used.</h5>
             <div class='project_container'>
                 <div class='project_block'>
                     <h1 class='block_title'>GPS Tracker</h1>
                     <h5 class='block_des'>Using Arduino, GPS and GSM module to track my brother walking to school.</h5>
                     <h5 class='block_tag'>Completed: Jan 14, 2021</h5>
-                    <a class='github_link' href="https://github.com/K1VN"><i class="fab fa-github fa-2x"></i></a>
                 </div>
                 <div class='project_block'>
                     <h1 class='block_title'>Robot Chassis</h1>
                     <h5 class='block_des'>Finished robot chassis modelling tutorial using Solidworks for Robotics Club.</h5>
                     <h5 class='block_tag'>Due: Jan 20, 2021</h5>
-                    <a class='github_link' href="https://github.com/K1VN"><i class="fab fa-github fa-2x"></i></a>
                 </div>
             </div>
             <div class='project_container'>
@@ -98,18 +95,19 @@
                         and wrote design report with team.
                     </h5>
                     <h5 class='block_tag'>Completed: Dec 15, 2021</h5>
-                    <a class='github_link' href="https://github.com/K1VN"><i class="fab fa-github fa-2x"></i></a>
                 </div>
                 <div class='project_block'>
                     <h1 class='block_title'>Airplane Model</h1>
                     <h5 class='block_des'>Modelled airplane model for remote controlled flight at low altitudes and speed.</h5>
                     <h5 class='block_tag'>Due: Feb 1, 2021</h5>
-                    <a class='github_link' href="https://github.com/K1VN"><i class="fab fa-github fa-2x"></i></a>
                 </div>
             </div>
         </div>
         <div class='blog'>
-            <h1 class='section_title'>Blog</h1>
+            <div class='section_header'>
+                <a href='' id='blog' class='section_title'>Blog</a>
+                <a class='medium_link' href="https://k17vn.medium.com"><i class="fab fa-medium fa-3x"></i></a>
+            </div>
             <h5 class='section_des'>I write about science, technology, and more.</h5>
             <div class='blog_container'>
                 <div class='blog_block'>
@@ -118,7 +116,6 @@
                     <h5 class='block_des'>Problem solving is one of the most important skills for work...
                     </h5>
                     <h5 class='block_tag'>Published: Jan 12, 2021</h5>
-                    <a class='medium_link' href="https://k17vn.medium.com"><i class="fab fa-medium fa-3x"></i></a>
                 </div>
                 <div class='blog_block'>
                     <h1 class='block_title'>Philosophy of Perspectives</h1>
@@ -126,7 +123,6 @@
                         They determine the quality of your lifestyle.
                     </h5>
                     <h5 class='block_tag'>Not Published</h5>
-                    <a class='medium_link' href="https://k17vn.medium.com"><i class="fab fa-medium fa-3x"></i></a>
                 </div>
                 <div class='blog_block'>
                     <h1 class='block_title'>How to Grow Up</h1>
@@ -134,16 +130,11 @@
                         teenage years.
                     </h5>
                     <h5 class='block_tag'>Not Published</h5>
-                    <a class='medium_link' href="https://k17vn.medium.com"><i class="fab fa-medium fa-3x"></i></a>
                 </div>
             </div>
         </div>
         <div class='footer'>
-            <div class='socials'>
-                <a id='linkedin' href="https://www.linkedin.com/in/kevin-ma-6abb85183/"><i class="fab fa-linkedin fa-3x"></i></a>
-                <a id='github' href="https://github.com/K1VN"><i class="fab fa-github fa-3x"></i></a>
-                <a id='youtube' href="https://www.youtube.com/channel/UCVElT_tWoC9Z_DVdt9XWT1g?guided_help_flow=5"><i class="fab fa-youtube fa-3x"></i></a>
-            </div>
+
         </div>
     </div>
 </body>

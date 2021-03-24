@@ -1,0 +1,69 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: gird;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-rows: 500px 500px 1000px;
+}
+
+/* General Classes */
+.block_title {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 25px;
+}
+
+.block_des {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 16px;
+}
+
+.block_tag {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 12px;
+}
+
+/* Block Classes */
+.m_project_section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.m_project {
+    width: 25%;
+    margin: 20px;
+    padding: 20px;
+    border: 2px black solid;
+}
+
+/* Intro */
+.intro {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+/* Current Projects */
+.current_projects {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+/* Link Projects */
+.sm_project {
+    width: 25%;
+}
+
+.sm_project ul {
+    list-style: none;
+}
+
+.sm_project a {
+    text-decoration: none;
+    color: black;
+}
+
