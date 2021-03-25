@@ -7,7 +7,7 @@
 .container {
     display: grid;
     grid-template-columns: 1fr 5fr 1fr;
-    grid-template-rows: 20px 1080px auto auto auto auto;
+    grid-template-rows: 20px 800px auto auto auto auto;
 }
 
 .socials {
@@ -40,19 +40,18 @@
     grid-row: 2 / span 1;
     display: flex;
     padding-bottom: 50px;
-    margin-top: 175px;
+    margin-top: 120px;
 }
 
 .intro_text {
     width: 60%;
 }
 
-.intro h1 {
-    font-family: 'Roboto Mono', monospace;
-    font-size: 150px;
+#name {
+    background-color: #ffd04e;
 }
 
-.intro h5 {
+.intro h5, .intro h1 {
     font-family: 'Roboto Mono', monospace;
     font-size: 90px;
 }
@@ -61,8 +60,8 @@
     height: 70%;
     margin-top: 50px;
     background-color: black;
-    padding: 20px 60px;
-    margin-left: 60px;
+    padding: 20px 80px;
+    margin-left: 100px;
 }
 
 .menu ul {
@@ -78,6 +77,7 @@
     text-decoration: none;
     color: white;
     font-size: 30px;
+    padding: 10px;
 }
 
 .menu a:hover {
@@ -100,11 +100,6 @@
     padding-bottom: 50px;
 }
 
-#projects {
-    text-decoration: none;
-    color: black;
-}
-
 .section_header {
     display: flex;
     justify-content: center;
@@ -113,10 +108,16 @@
 
 .section_title {
     font-family: 'Roboto Mono', monospace;
-    font-size: 50px;
+    font-size: 80px;
     margin-top: 20px;
     display: block;
     text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.section_title:hover {
+    text-decoration: underline;
 }
 
 .section_des {
@@ -202,7 +203,7 @@
 
 .guide_block a {
     font-family: 'Roboto Mono', monospace;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 300;
     text-decoration: none;
     display: block;
@@ -211,8 +212,10 @@
 }
 
 #guide_main {
-    font-size: 25px;
+    font-size: 30px;
     font-weight: 500;
+    padding: 10px 20px;
+    border-bottom: 1px black solid;
 }
 
 .guide_block a:hover {
@@ -228,11 +231,6 @@
     grid-row: 5 / span 1;
     padding-bottom: 50px;
     border-bottom: 2px black solid;
-}
-
-#blog {
-    text-decoration: none;
-    color: black;
 }
 
 .blog_container {
