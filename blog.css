@@ -1,0 +1,177 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 600px 1000px 200px;
+}
+
+.header {
+    grid-column: 2;
+    grid-row: 1;
+    text-align: center;
+}
+
+#main_title {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 150px;
+    text-decoration: underline;
+    margin-top: 50px;
+}
+
+#main_subtitle {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+#intro {
+    font-weight: 300;
+    font-size: 17px;
+}
+
+.navbar_list_visible {
+    list-style: none;
+    display: flex;
+    margin: 50px 0;
+}
+
+.navbar_list_visible li {
+    margin: 0 auto;
+}
+
+.navbar_list_visible a {
+    font-family: 'Roboto Mono', monospace;
+    text-decoration: none;
+    color: black;
+    font-size: 35px;
+    padding: 10px;
+    border: 2px solid black;
+}
+
+#menu_show {
+    cursor: pointer;
+}
+
+.navbar_list_hidden {
+    list-style: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 50px 30px;
+    background-color: black;
+    height: 100%;
+    display: none;
+}
+
+.navbar_list_hidden a:hover {
+    background-color: white;
+    color: black;
+}
+
+#menu_hide {
+    text-decoration: none;
+    color: white;
+    font-style: italic;
+    cursor: pointer;
+    float: left;
+}
+
+#navbar_title {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 5em;
+    color: white;
+    text-decoration: underline;
+}
+
+.navbar_list_hidden a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 300;
+    font-size: 2em;
+    color: white;
+}
+
+.content {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+#showcase_title {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 25px;
+}
+
+#showcase_intro {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.showcase_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.showcase_block {
+    padding: 20px;
+    margin: 20px;
+    width: 100%;
+    background-color: black;
+}
+
+#block_title {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 40px;
+    color: white;
+}
+
+#des {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 300;
+    color: white;
+}
+
+#date {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 300;
+    color: white;
+}
+
+#tags {
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+    font-style: italic;
+}
+
+#downloads_title {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 25px;
+}
+
+#downloads_intro {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.downloads_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.downloads_block {
+    padding: 20px;
+    margin: 20px;
+    width: 100%;
+    background-color: black;
+}

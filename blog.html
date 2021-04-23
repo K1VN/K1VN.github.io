@@ -1,0 +1,71 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="blog.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;500&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300:600&amp;&display=swap" rel="stylesheet">
+    <title>GOOK</title>
+</head>
+<body>
+    <div class='container'>
+        <div class='header'>
+            <h1 id='main_title'>[GOOK]</h1>
+            <h5 id='main_subtitle'>Everything in one place.</h5>
+            <h5 id='intro'>GOOK is a comprehensive blog for projects in electronics and engineering.
+                The blog offers a minimist approach to learning using diagrams, images, and neat documentation
+                to explain project concepts and how-tos. Every blog post allows hobbyists and experts alike with
+                background content and resources to benefit from the project workflow despite not having hands-on experience.
+            </h5>
+            <h5 id='intro'><br>Blog posts older than a year will be archived (deleted) with all its files available to
+                download on the <i>Downloads</i> section.
+            </h5>
+            <ul class='navbar_list_visible'>
+                <li><a href="">Downloads</a></li>
+                <li><a id='menu_show' onclick="open_menu()">Topic Menu</a></li>
+            </ul>
+            <ul id='navbar_list_hidden' class='navbar_list_hidden'>
+                <li id='menu_hide'><a onclick="close_menu()">Back</a></li>
+                <li id='navbar_title'>Topics</li>
+                <li><a href="">Aerospace</a></li>
+                <li><a href="">Robotics</a></li>
+                <li><a href="">Payload</a></li>
+            </ul>
+        </div>
+        <div class='content'>
+            <!--Showcase section-->
+            <h1 id='showcase_title'>Recent Showcase</h1>
+            <h1 id='showcase_intro'>The following are the most recent posts.</h1>
+            <div class='showcase_container'>
+                <div class='showcase_block'>
+                    <h1 id='block_title'>Wrist Phone Holder</h1>
+                    <h5 id='des'>3D model</h5>
+                    <h5 id='date'>Apr 20, 2021</h5>
+                    <h5 id='tags'></h5>
+                </div>
+            </div>
+            <div class='showcase_container'>
+                <div class='showcase_block'>
+                    <h1 id='block_title'>Wrist Phone Holder</h1>
+                    <h5 id='des'>3D model</h5>
+                    <h5 id='date'>Apr 20, 2021</h5>
+                    <h5 id='tags'>23, sx</h5>
+                </div>
+            </div>
+            <!--Downloads section-->
+            <h1 id='downloads_title'>Downloads</h1>
+            <h5 id='downloads_intro'>Here are the downloads for archived posts ordered from archive date.</h5>
+            <div class='downloads_container'>
+                <div class='downloads_block'>
+                    <ul class='downloads_list'>
+                        <li><a id='downloads_title' href=""></a></li>
+                        <li><a href=""></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src='blog.js'></script>
+</html>
